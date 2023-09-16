@@ -428,3 +428,17 @@
 .testimonial-carousel .owl-dot.active::after {
     background: var(--primary);
 }
+/* Default styling */
+.read-more {
+    color: red;
+    text-decoration: none;
+    /* Remove default underline */
+    transition: color 0.3s, text-decoration 0.3s;
+    /* Add smooth transition */
+}
+
+/* Hover effect */
+.read-more:hover {
+    color: green;
+    text-decoration: underline;
+}
