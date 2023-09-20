@@ -94,65 +94,94 @@
     <div class="container" id="blog1">
         <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="col-lg-8">
-                <h1 class="display-5 mb-0">Do You Want to Learn Kotlin? Read Basics of Kotlin First</h1>
-                <img class="img-fluid rounded" src="img/kotlin.jpg" alt="">
+                <h1 class="display-5 mb-0">Do You Want to Learn Kotlin? Read Basics of Kotlin First</h1><br /><br />
+                <img class="img-fluid rounded" src="img/kotlin.jpg" alt=""><br/><br/>
                 <span style="text-align: justify;">
-                    <span style="font-weight: bold;">"Can you start freelancing with no experience?"</span> It's a
-                    question I used to
-                    ask myself as I embarked on my freelancing journey. Friends and colleagues often inquired about how
-                    I managed to
-                    kickstart my freelancing career, secure clients, and build a thriving freelance business, especially
-                    when I had zero
-                    prior experience. <br><br>
-
-                    Starting a freelancing career from scratch may seem like a daunting task, <span
-                        style="font-weight: bold;">but
-                        here's the reality:</span> many aspiring freelancers often wonder how to find their first client
-                    and secure
-                    freelancing work without a work history to showcase. If you're in this position, <span
-                        style="font-weight: bold;">you're not alone</span>, and the good news is that it's entirely
-                    possible to launch a
-                    successful freelancing career from the ground up. <br><br>
-
-                    In this blog, I'll share my journey and offer valuable tips on how to kickstart your freelancing
-                    career when you're
-                    starting with no prior experience. Whether you aspire to be a freelance graphic designer, writer,
-                    developer, or any
-                    other professional, finding that elusive first client can be challenging. After all, it's a common
-                    conundrum: you
-                    need experience to land a job, but you need a job to gain experience. So, how can you break this
-                    cycle and pave your
-                    way to freelancing success? <br><br>
-
-                    <span style="font-weight: bold;">1. Build a Portfolio:</span> If you lack a portfolio of past work,
-                    consider
-                    creating sample pieces to showcase your skills and capabilities to potential clients. <br><br>
-
-                    <span style="font-weight: bold;">2. Embrace Your Skills:</span> Even without a formal freelancing
-                    background, don't
-                    underestimate the value of your unique skills and abilities. Your authenticity and willingness to
-                    learn can set you
-                    apart. <br><br>
-
-                    <span style="font-weight: bold;">3. Expand Your Network:</span> Networking is key in the freelancing
-                    world. Start by
-                    connecting with peers, mentors, and potential clients. Remember that in the early stages, it's okay
-                    to take on some
-                    unpaid or low-paying projects to build your portfolio and reputation. <br><br>
-
-                    <span style="font-weight: bold;">4. Consistency is Key:</span> As you embark on your freelancing
-                    journey, maintain
-                    professionalism and consistency in your work. Success may not come overnight, but by staying
-                    committed to your
-                    craft, you'll eventually reap the rewards. <br><br>
-
-                    Through this blog series, you'll get an insider's view of my freelancing journey and discover that
-                    with
-                    determination, resourcefulness, and a willingness to learn, you can overcome the initial hurdles of
-                    inexperience.
-                    So, let's dive in and explore how you, like me, can transform your freelancing aspirations into a
-                    thriving reality.
-                    Together, we'll make your freelancing dreams come true!
+                    <h4>Let us understand the basics of Kotlin programming language.</h4>
+                    <h5>What is Kotlin and where is it used?</h5>
+                    <p>Kotlin is a statically typed programming language that runs on the Java virtual machine and also can be compiled to
+                        JavaScript source code or use the LLVM compiler infrastructure. Its primary development is from a team of JetBrains
+                        programmers based in Saint Petersburg, Russia.</p>
+                    <p>Kotlin comes from the good folks at JetBrains, the guys behind the best IDEs like IntelliJ and our beloved Android
+                        Studio. They understand the pain we developers face in our day-to-day development workflow and are trying to address
+                        the real use cases in this language.</p>
+                    <p> Most interestingly You can start using Kotlin in your existing project with all your old Java code straight away.
+                    </p>
+                    <p>We will discuss Java vs. Kotlin in our next blog, before that let's see a few interesting concepts that are required
+                        for you to understand Kotlin.</p>
+                    <br /><h5>1. Main Function</h5>
+                    <p>Like other programming languages in <strong>Kotlin</strong>, <strong>main function</strong> is a must. That is where
+                        the compiler starts to compile the program. In Kotlin the main function can be written as follows:</p>
+                    <div class="codeblock">fun main() {<br />(&quot;Hello Kotlin&quot;)
+                        //Printing &quot;Hello Kotlin&quot;<br />}</div>
+                    <br /><br /><h5>2. Variable Declaration</h5>
+                    <p>Variables can be declared using two keywords namely val and var.</p>
+                    <p>i.&nbsp; val: It is used for variables whose value never changes.&nbsp;<br /> var: It is used for a variable whose
+                        value can change.</p><p>Syntax would be,</p>
+                    <div class="codeblock"><div>keyword variable_name: data_type = value
+                        </div></div><p>&nbsp; Let's see example So you will get idea.</p>
+                    <p>Example of val, Which gives error while you will try to reassign it.</p>
+                    <div class="codeblock"><p>val number: Int = 10</p>
+                        <p>fun main() {<br />&nbsp; &nbsp; println(number)&nbsp; &nbsp; // 10<br />number = 20&nbsp; &nbsp;
+                            &nbsp;&nbsp;<br />&nbsp; &nbsp; println(number)&nbsp; &nbsp;// Error val cannot be reassigned<br />}</p>
+                    </div><p>Example of var, you can reassign value of it.</p>
+                    <div class="codeblock"><p>var number: Int = 10</p><p>fun main() {<br />&nbsp; &nbsp;
+                            println(number)&nbsp; &nbsp;//10<br />number = 20<br />&nbsp; &nbsp; println(number)&nbsp;
+                            &nbsp;//20<br />}</p></div><p>In general, var is called read-write reference and val is called a
+                        read-only reference. We will not be able to reassign the value but we can modify the properties.</p><p>
+                        <strong>Type Inference</strong></p><p>Type inference refers to automatically detect the data type of the
+                        variable during the compilation time. In Kotlin the type is defined after variable name:</p><div
+                        class="codeblock">var title: String&nbsp;</div><p>If you
+                        assign a type for a variable then you cannot reassign a different type for the same variable by doing so you will
+                        get an error,</p><div class="codeblock">fun main()
+                        {<br />&nbsp; &nbsp; var name: String = &quot;Neerwebapp&quot;<br />&nbsp; &nbsp; name= 12<br />&nbsp;
+                        &nbsp; println(name)&nbsp; &nbsp; &nbsp;// Error<br />}</div><p>&nbsp;However, using the keyword
+                        &ldquo;Any&rdquo; you can assign an Int to a String or vice-versa as follows:</p><div
+                        class="codeblock">fun main() {<br />&nbsp; &nbsp; var name: Any
+                        = &quot;Neerwebapp&quot;<br />&nbsp; &nbsp; name = 12<br />&nbsp; &nbsp; println(name)&nbsp; &nbsp; &nbsp;
+                        //12<br />}</div>
+                        <br /><br /><h5>3. Null Safety</h5><p>Kotlin variables cannot hold null variables by
+                        default so in order to hold null variables you have to use a different syntax as shown below, all you have to do is
+                        you have to add a &ldquo;?&rdquo; in front of the variable declaration.</p><div
+                       class="codeblock"><p>var number: Int? = null<br />fun main()
+                            {</p><p>&nbsp; &nbsp; println(number)&nbsp; &nbsp;// null<br />}</p></div>
+                            <p>In case if you fail to do so, you will get an error saying &ldquo;<strong>Null can not be a value of non-null type
+                            int</strong>&rdquo;.&nbsp;</p>
+                            <br /><br /><h5>4. Conditional Statements</h5><div
+                        class="codeblock"><p>var num: Int = 10</p><p>fun main()
+                            {</p><p>if(num == 10)<br />{<br />\nnum = num + 10<br />println(num) //20<br />}</p>
+                      <p>else<br />{<br />num = 10<br />println(num)<br />}<br />}</p></div>
+                    <br /><br /><h5>5. Functions&nbsp;</h5><p>Functions are a block of organized and reusable code that is used to perform a single
+                        task. In Kotlin in order to create a function you have to use the fun keyword, and next defining the data types of
+                        input that the function takes, and then finally you have to return the output of the function.&nbsp;</p><div
+                        class="codeblock">fun function_name(): data_type{<br />statement
+                        1<br />statement 2<br />-<br />-<br />-<br />statement n<br />return
+                        function_name<br />}</div><p>The statement 1, 2 and n are just executable statements or also called the
+                        body of the function which must be placed within the function.</p><div class="codeblock">
+                            <p>fun add_two_numbers(): Int{<br />&nbsp; &nbsp; val num1: Int =
+                            10<br />&nbsp; &nbsp; val num2: Int = 20<br />&nbsp; &nbsp; val num3: Int = num1 + num2</p><p>
+                            &nbsp; &nbsp; return num3<br />}</p><p>fun main() {<br />&nbsp; &nbsp;
+                            println(add_two_numbers())<br />}</p></div>
+                            <br /><br /><h5>6. Classes and its properties</h5><p>In
+                        Kotlin in order to declare a class you need to use the keyword class and then its properties.Classes represent state
+                        using properties. A property is a class-level variable that can include a getter, a setter, and a backing field. An
+                        object is an instance of a class, with the help of an object we can access the variables of the class.</p>
+                    <div class="codeblock"><p>class dog {<br />&nbsp; &nbsp; var
+                            name: String = &quot;Danny&quot;<br />&nbsp; &nbsp; var breed: String = &quot;Boxer&quot;<br />&nbsp;
+                            &nbsp; var color: String = &quot;White&quot;<br />}</p><p>fun main() {<br />&nbsp; &nbsp; var d
+                            = dog()<br />&nbsp; &nbsp; println(d.name)&nbsp; &nbsp; &nbsp; //Danny<br />&nbsp; &nbsp;
+                            println(d.breed)&nbsp; &nbsp; &nbsp;//Boxer<br />&nbsp; &nbsp; println(d.color)&nbsp; &nbsp;
+                            &nbsp;//White<br />}</p></div>
+                            <br/><br/><h5>7. Getting the input from the user</h5><p>In order to
+                        get the input from the user, Kotlin provides a special method called readline which reads the line entered by the
+                        user.</p><div class="codeblock"><p>fun main()
+                            {<br />&nbsp; &nbsp; var name: String? = null<br />&nbsp; &nbsp; println(&quot;Neerwebapp&quot;)</p>
+                        <p>&nbsp; &nbsp; name = readLine()<br />&nbsp; &nbsp; println(&quot;Your name is: $name&quot;)&nbsp; //
+                            Neerwebapp<br />}</p>
+                    </div>
+                    <p>The above are some basic and important concepts of Kotlin programming that you need to know. However, this is not the
+                        end of Kotlin, this is just the beginning. I will try to upload more tutorials about Kotlin Programming and help you
+                        guys in mastering the language.
                 </span>
             </div>
             <!-- Right Sidebar -->
