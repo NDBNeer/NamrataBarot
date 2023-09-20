@@ -442,3 +442,9 @@
     color: green;
     text-decoration: underline;
 }
+.codeblock
+{
+        background: #eee;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+}
